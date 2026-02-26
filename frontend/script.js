@@ -26,7 +26,6 @@ fetch('./data.json')
 const OPEN_DOOR_LOGO = "assets/freeRoomsLogo.png";
 const CLOSED_DOOR_LOGO = "assets/freeroomsDoorClosed.png"
 
-const logoEl = document.querySelector('.logo');
 const doorEl = document.querySelector('.door');
 
 doorEl.addEventListener('click', handleClick);
