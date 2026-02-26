@@ -1,3 +1,4 @@
+// set up the image gallery of buildings
 const galleryEl = document.querySelector('.gallery');
 
 fetch('./data.json')
@@ -19,3 +20,18 @@ fetch('./data.json')
             galleryEl.appendChild(cardEl);
         });
     })
+
+
+// component state management
+const OPEN_DOOR_LOGO = "assets/freeRoomsLogo.png";
+const CLOSED_DOOR_LOGO = "assets/freeroomsDoorClosed.png"
+
+const logoEl = document.querySelector('.logo');
+const doorEl = document.querySelector('.door');
+
+doorEl.addEventListener('click', handleClick);
+
+function handleClick()  {
+    var isOpen = doorEl.getAttribute('src') === OPEN_DOOR_LOGO;
+    doorEl.setAttribute('src', isOpen ? CLOSED_DOOR_LOGO : OPEN_DOOR_LOGO);
+}

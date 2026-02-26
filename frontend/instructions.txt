@@ -1,0 +1,2 @@
+1. download live server extension by RitwickDey on vscode.
+2. right click index.html and select open with live server
