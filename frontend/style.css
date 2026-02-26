@@ -4,6 +4,9 @@ body {
     color: rgb(236, 112, 39);
 }
 
+img {
+    max-width: 100%;
+}
 .nav {
     display: flex;
     align-items: center;
@@ -62,4 +65,34 @@ body {
     width:  500px;
     margin: auto 0;
     font-family: monospace;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.room {
+    position: relative;
+    width: 18%;
+}
+
+.tag {
+    font-size: 10px;
+    background-color: white;
+    padding: 8px;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    border-radius: 5px;
+}
+
+.dot {
+  height: 6px;
+  width: 6px;
+  background-color: green;
+  border-radius: 50%;
+  display: inline-block;
 }
