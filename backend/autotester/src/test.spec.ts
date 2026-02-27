@@ -138,7 +138,7 @@ describe("Task 3", () => {
       expect(resp2.status).toBe(400);
     });
 
-    it("Bro cooked", async () => {
+    it.only("Bro cooked", async () => {
       const meatball = {
         type: "recipe",
         name: "Skibidi",
